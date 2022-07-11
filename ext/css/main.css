@@ -1,0 +1,330 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+}
+
+textarea{
+    resize: none;
+    background-color: #212529;
+    color: white;
+    height: 150px;
+}
+
+a{
+    color: unset;
+}
+
+textarea{
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+textarea::-webkit-scrollbar-track{
+    background-color: #212529;
+}
+
+textarea::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+textarea::-webkit-scrollbar-thumb{
+
+    background-color: #f8f9fa;
+}
+
+.inputEmail input{
+    padding: 0.375em
+}
+
+.row {
+    margin: unset;
+    padding: unset;
+}
+
+
+.welcomeText {
+    transition: all 250ms ease-in-out;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30px;
+    animation: 5s ease-in-out infinite;
+}
+
+.descrpitionText {
+    font-size: 18px;
+}
+
+.tags {
+    border-radius: 25px;
+    background: cornsilk;
+    font-size: 15px;
+    padding: 0.7em;
+    transition: 250ms all ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.tags:hover {
+    background: transparent;
+    border: 1px solid cornsilk;
+    color: white !important;
+}
+
+.tagsSections {
+    padding: 0 0 15px 0px;
+}
+
+.frenchFlag {
+    background: linear-gradient(90deg, mediumblue 33.3%, white 33.3%, white 66.6%, red 66.6%);
+    width: 30px;
+    height: 30px;
+}
+
+.flagInDesc {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.UnitedKingdomsFlag {
+    display: flex;
+    width: 220px;
+    height: 110px;
+    background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #FFF 37px, #FFF 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #FFF 92px, #FFF 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), #012169;
+}
+
+.bitAbtMe {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.descriptionDiv {
+    font-size: 16px;
+}
+
+.descriptionDiv p {
+    margin: unset;
+    padding: unset;
+}
+
+.hr-links {
+    width: 50px;
+    height: 5px;
+    margin: 0.5rem 0;
+    background: aliceblue;
+}
+
+#linksSocials a {
+    text-decoration: unset;
+}
+
+#linksSocials a:hover {
+    color: unset;
+}
+
+.CMDlike {
+    width: 2px;
+    height: 20px;
+    background: white;
+    animation: 1000ms infinite;
+    animation-name: cmdLike;
+}
+
+.optionsSite{
+    z-index: 10;
+}
+
+#myProgress {
+    background-color: green;
+    animation: progressSize 250ms ease-in-out;
+    border-radius: 20px;
+}
+
+#myBar {
+    width: 50%;
+    height: 30px;
+    animation: progressReturn 1s ease-in-out;
+    background-image: linear-gradient(#9b4993, #9b4993), linear-gradient(#ED820E, #ED820E), linear-gradient(#CCCCCC, #CCCCCC), linear-gradient(yellow, yellow);
+    background-size: 8% 100%, 30% 100%, 60% 100%, 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.fontSizeForAgeDoing {
+    font-size: 15px;
+}
+
+.hrSharp {
+    width: 50px;
+    height: 5px;
+    background: #9b4993;
+    border-top: none;
+    margin: unset;
+    opacity: 1;
+}
+
+.backgroundNotif {
+    background: #2F2E2E;
+    height: 45px;
+    border-radius: 25px;
+    top: 60px;
+}
+
+#alertArea {
+}
+
+.stateCircle {
+    background: #4F4F4F;
+    height: 45px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.notifText {
+    margin: unset;
+    font-size: 16px;
+}
+
+.answer {
+    font-size: 8px;
+}
+
+.activitiesGrades {
+    font-size: 18px;
+}
+
+.validedGrades {
+    font-size: 24px;
+    background: #34393e;
+}
+
+.cardsRow{
+    background: black url("../img/backgroundCards.jpg") top no-repeat;
+    border-radius: 15px;
+}
+
+.cardsRight{
+    background: black url("../img/backgroundCards.jpg")bottom left no-repeat;
+    border-radius: 15px;
+}
+
+.semi-circle{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-desc{
+    font-size: 14px;
+}
+
+.circle-title{
+    font-size: 18px;
+}
+
+.projectsCardsTitle{
+    font-size: 18px;
+}
+
+.projectsCards{
+    font-size: 14px;
+}
+
+#virgoImg{
+    height: 265px;
+}
+
+input::placeholder {
+    color: #34393e;
+    opacity: 0.5; /* Firefox */
+}
+
+input:-ms-input-placeholder {
+    color: #34393e;
+}
+
+input::-ms-input-placeholder {
+    color: #34393e;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes cmdLike {
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: collapse;
+    }
+}
+
+@keyframes progressReturn {
+    50% {
+        background-size: 20% 100%, 30% 100%, 90% 100%, 100% 100%
+    }
+    100% {
+        background-size: 8% 100%, 30% 100%, 60% 100%, 100% 100%
+    }
+
+}
+
+@keyframes progressSize {
+    0% {
+        width: 0%
+    }
+    25% {
+        width: 25%
+    }
+    50% {
+        width: 50%
+    }
+    75% {
+        width: 75%
+    }
+
+}

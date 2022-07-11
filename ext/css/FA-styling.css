@@ -1,0 +1,78 @@
+
+.fa-linkedin{
+    color: #0e76a8;
+    transition: 250ms ease-in-out all;
+    cursor: pointer;
+}
+
+.fa-linkedin:hover{
+    color: #1288c0;
+}
+
+.fa-github{
+    color: #333;
+    transition: 250ms ease-in-out all;
+    cursor: pointer;
+}
+
+.fa-github:hover{
+    color: #424141;
+
+}
+
+.fa-discord{
+    color: #7289d9;
+    transition: 250ms ease-in-out all;
+    cursor: pointer;
+}
+
+.fa-discord:hover{
+    color: #6784e8;
+}
+
+.fa-envelope{
+    cursor: pointer;
+    transition: 250ms ease-in-out all;
+}
+
+.fa-envelope:hover{
+    cursor: pointer;
+    color: #9f9b9b;
+}
+
+.social-link{
+    font-size: 16px;
+}
+
+.fa-download{
+    transition: 250ms all;
+    cursor: pointer;
+}
+
+.fa-download:hover{
+    color: gray;
+}
+
+.fa-check{
+    color: #00ff00;
+}
+
+.fa-spinner{
+    color: orange;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}

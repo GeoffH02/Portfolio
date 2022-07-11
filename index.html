@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Geoffrey Hallier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./ext/css/main.css">
+    <link rel="stylesheet" href="./ext/css/FA-styling.css">
+    <link rel="stylesheet" href="./ext/css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./ext/css/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+            integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<section id="nav">
+    <nav>
+        <div class="nav" id="myTopnav">
+            <a href="#resume">Summary</a>
+            <a href="#grades">Grades</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contacts</a>
+            <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</section>
+<section class="welcome welcomeText bg-dark text-light p-5" id="resume">
+    <div class="row p-2">
+        <div class="col-lg-6 d-flex">
+            <div class="backgroundNotif col-lg-3  align-items-center position-fixed" id="alertArea"
+                 style="display: none">
+                <div class="stateCircle col-lg-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-solid fa-check p-2"></i></div>
+                <p class="notifText ms-2"></p>
+
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end optionsSite">
+            <i class="fa-solid fa-moon me-2"></i>
+            <i class="fa-solid fa-language"></i>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-9">
+            <span class="changingText">Bonjour, bienvenue sur mon portoflio.</span>
+            <div class="descrpitionText">
+                <p class="m-0">My name is Geoffrey Hallier.</p>
+                <span class="m-0 d-flex align-items-center">French Developer.<span
+                        class="frenchFlag rounded-pill flagInDesc"></span></span>
+                <p>Take a look at my CV here <a href="ext/img/projects/Hallier_Geoffrey.pdf"><i
+                        class="fa-solid fa-download"></i></a></p>
+
+            </div>
+            <div class="tagsSections">
+                <span class="tags text-dark">Développeur</span>
+                <span class="tags text-dark">Front-end</span>
+                <span class="tags text-dark">Back-end</span>
+                <span class="tags text-dark">Full Stack</span>
+            </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <img src="./ext/img/profilePic.png" alt="profilePic" width="300" class="img-fluid rounded-circle">
+            <div class="mt-1" id="linksSocials">
+                <a href="https://www.linkedin.com/in/geoffrey-hallier-8ab971231/">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/GeoffH02">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <i class="fa-solid fa-envelope" onclick="showAlert(this.id)" id="email"></i>
+            </div>
+            <hr class="hr-links">
+            <p class="social-link">Socials links <i class="fa-solid fa-arrow-turn-up"></i></p>
+        </div>
+    </div>
+    <div class="row d-flex align-items-center p-5">
+        <div class="col-lg-6">
+            <span class="bitAbtMe">A bit about me :</span>
+            <div class="descriptionDiv">
+                <p id="idAge">My name is Geoffrey, im 22 years old.</p>
+                <p>I speak french and english.</p>
+                <p>Currently studying at Epitech Lille.</p>
+                <p>I landed in Web Developpement in 2020.</p>
+                <p>I was in game developpement from 2017 to 2020.</p>
+                <p>Still doing games scripting during my free time.</p>
+                <p>Im proud of my work to be honest.</p>
+                <p>Im actually in job search.</p>
+                <p>I never stop learning and that's what i like!</p>
+                <div class="d-flex flex-row">
+                    <p class="d-flex flex-row">And im currently in developpement for over 8 years...
+                    <div class="CMDlike"></div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <span class="bitAbtMe">During theses 8 years what i learn :</span>
+            <div id="myProgress">
+                <div id="myBar"></div>
+            </div>
+            <div class="mt-2 d-flex fontSizeForAgeDoing row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/csharp.png" width="50" alt="csharp" class="img-fluid">
+                            <hr class="hrSharp">
+                            <span>C#</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/c-logo-icon-28389.png" width="50" alt="cplus" class="img-fluid">
+                            <hr class="hrSharp" style="background: #ED820E">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/cross.png" width="50" alt="gsc" class="img-fluid">
+                            <hr class="hrSharp" style="background: #CCCCCC">
+                            <span>GSC</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/cross.png" width="50" alt="sqf" class="img-fluid">
+                            <hr class="hrSharp" style="background: yellow">
+                            <span>SQF</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/html5.png" width="50" alt="html" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/css.png" width="35" alt="css" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/JavaScript-logo.png" width="50" alt="js" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/php.png" width="50" alt="php" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/sql-logo.png" width="50" alt="sql" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center text-center ms-2 me-2 col-lg-2">
+                        <div>
+                            <img src="./ext/img/logo-react-icon.png" width="50" alt="react" class="img-fluid">
+                            <hr class="hrSharp" style="background: green">
+                            <span>REACT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcomeText bg-dark text-light p-5" id="grades">
+    <div class="row">
+        <div class="col-lg-12 mt-5">
+            <p class="m-0 p-0">What's my grades and activities?</p>
+        </div>
+    </div>
+    <div class="row fontSizeForAgeDoing d-flex justify-content-center text-center p-5 align-items-center">
+        <div class="col-lg-5">
+            <p class="p-4 activitiesGrades">Current grades</p>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRow">
+                <p>Brevet</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-check validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Acquired in 2015.</p>
+                        <p>At 15 Years old.</p>
+                        <p>At Le-Nouvion-en-Thierache.</p>
+                        <p>In the Aisne departement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRow mt-3">
+                <p>BEP Machining technician</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-check validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Acquired in 2020.</p>
+                        <p>At 20 years old.</p>
+                        <p>At Hirson.</p>
+                        <p>In the Aisne departement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRow mt-3">
+                <p>BAC +2</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-spinner validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>In the process of acquiring</p>
+                        <p>At 22 years old.</p>
+                        <p>At Web@cademie.</p>
+                        <p>At Lille.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <p class="p-4 activitiesGrades">Activities done</p>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRight mt-3">
+                <p>Nespoli France</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-check validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Order preparer</p>
+                        <p>2 Months each summer for work.</p>
+                        <p>From 2018 to 2021</p>
+                        <p>In the Aisne departement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRight mt-3">
+                <p>Nespoli France</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-check validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Technical maintenance</p>
+                        <p>3 Months each years for school.</p>
+                        <p>From 2018 to 2021</p>
+                        <p>In the Aisne departement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column cardsRight mt-3">
+                <p>Virgo</p>
+                <div class="col-lg-12 flex-row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <i class="fa-solid fa-spinner validedGrades p-3 rounded-circle"></i>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Website and wallet development</p>
+                        <p>From august 2021 to september 2023</p>
+                        <p>For school learning.</p>
+                        <p>At Lille.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="welcomeText bg-dark text-light " id="experience">
+    <div class="row">
+        <div class="col-lg-12 mt-5 text-center">
+            <p class="m-0 p-0">My experience</p>
+        </div>
+    </div>
+    <div class="row d-flex p-3">
+        <div class="col-lg-6 d-flex flex-column align-items-center">
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3 " style=" background-image: conic-gradient(#9b4993 10%, transparent 10%);">
+                    10%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                    <span class="circle-title d-flex align-items-center">C# <img src="./ext/img/csharp.png"
+                                                                                 width="25px"></span>
+                    <span>Done fews projects working with HEX in RTE for my console (PS3).</span>
+                    <span>Not learned so much to be honest.</span>
+                    <span>Quit limited in possibilities on theses projects...</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(#ED820E 10%, transparent 10%);">
+                    10%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                    <span class="circle-title d-flex align-items-center">C++ <img src="./ext/img/c-logo-icon-28389.png"
+                                                                                  width="25px"></span>
+                    <span>Done 1 project in C++, like C# it was for my console.</span>
+                    <span>Not learned so much too.</span>
+                    <span>It's very old projects i don't remember exactly.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 90%, transparent 10%);">
+                    80%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                    <span class="circle-title d-flex align-items-center">HTML <img src="./ext/img/html5.png"
+                                                                                   width="25px"></span>
+                    <span>Worked on many projects.</span>
+                    <span>Really love this language.</span>
+                    <span>Worked 50% in vanilla HTML and 50% with Bootstrap.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 50%, transparent 10%);">
+                    50%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                    <span class="circle-title d-flex align-items-center">JavaScript <img
+                            src="./ext/img/JavaScript-logo.png" width="25px"></span>
+                    <span>JavaScript is really cool.</span>
+                    <span>Im not stopping to learn Javascript.</span>
+                    <span>JavaScript is one of my favorite language.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 50%, transparent 10%);">
+                    50%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                    <span class="circle-title d-flex align-items-center">SQL <img
+                            src="./ext/img/sql-logo.png" width="25px"></span>
+                    <span>Hard to take in hand at the beginning but really logical.</span>
+                    <span>Simple language with less simple code.</span>
+                    <span>At least we have really good Docs.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 55%, transparent 10%);">
+                    55%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">GitHub <img src="./ext/img/github.png"
+                                                                                 width="25px"></span>
+                    <span>Github is a part of the development that why im putting it here.</span>
+                    <span>I know how to work in team on GitHub.</span>
+                    <span>I just need to work on a bigger team to see others results.</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 d-flex flex-column align-items-center">
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(#CCCCCC 30%, transparent 10%);">
+                    30%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">GSC <img src="./ext/img/cross.png" width="25"
+                                                                              alt="gsc" class="img-fluid"></span>
+                    <span>GSC for Game Script Compiler.</span>
+                    <span>Make many projects with GSC.</span>
+                    <span>It was very fun and interesting but nothing concrete with this language.</span>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3"
+                     style=" background-image: conic-gradient(yellow 90%, transparent 10%);color: black">
+                    90%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">SQF <img src="./ext/img/cross.png" width="25"
+                                                                              alt="gsc" class="img-fluid"></span>
+                    <span>SQF, my first real love.</span>
+                    <span>It's a language make for Bohemia games.</span>
+                    <span>Similar to JS (for me).</span>
+                    <span>Done many many projects for my self or for a german company.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 90%, transparent 10%);">
+                    80%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">CSS <img src="./ext/img/css.png"
+                                                                              width="25px"></span>
+                    <span>HTML without CSS ? No way.</span>
+                    <span>Really enjoying connect things together.</span>
+                    <span>Love working on CSS.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 30%, transparent 10%);">
+                    30%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">PHP <img src="./ext/img/php.png"
+                                                                              width="25px"></span>
+                    <span>PHP... this strange language.</span>
+                    <span>To be honest is one of the language where i don't enjoy working on.</span>
+                    <span>When i have the choice between PHP and JS, im surely taking JS.</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(green 35%, transparent 10%);">
+                    35%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">REACT <img src="./ext/img/logo-react-icon.png"
+                                                                                width="25px"></span>
+                    <span>Really interesting framework.</span>
+                    <span>Love working with REACT , need more learning to be better.</span>
+                    <span>I need to learn more about REACT but i will surely learn more about it!</span>
+                </div>
+            </div>
+            <div class="d-flex col-lg-12 justify-content-center">
+                <div class="semi-circle mt-3" style=" background-image: conic-gradient(#563d7c 85%, transparent 10%);">
+                    85%
+                </div>
+                <div class="circle-desc mt-3 d-flex flex-column ms-4 justify-content-center col-lg-8">
+                <span class="circle-title d-flex align-items-center">BootStrap <img
+                        src="./ext/img/Bootstrap_logo.svg.png"
+                        width="25px"></span>
+                    <span>Started my first project with BootStrap and really loved it.</span>
+                    <span>Bootstrap is awesome to use but its cool too to make project without.</span>
+                    <span>I use bootstrap without any problems.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcomeText bg-dark text-light p-5" id="projects">
+    <div class="row">
+        <div class="col-lg-12 mt-5">
+            <p class="m-0 p-0">My projects</p>
+        </div>
+    </div>
+    <div class="row d-flex p-3 align-items-center">
+        <div class="col-lg-6 text-center p-3">
+            <div class="col-lg-12">
+                <span class="projectsCardsTitle">Twitter Remake</span>
+            </div>
+            <div class="projectsCards d-flex row align-items-center">
+                <div class="col-lg-6">
+                    <img src="./ext/img/projects/twitter.gif" alt="twitter" class="rounded img-fluid" width="">
+                </div>
+                <div class="col-lg-6">
+                    <p>Interesting project !</p>
+                    <p>Project duration was 1 month.</p>
+                    <p>Made with team of 4.</p>
+                    <p>I made the front with a collegue.</p>
+                    <p>Others members done the back-end.</p>
+                    <p>I done some JavaScript too.</p>
+                    <a class="btn btn-outline-light" href="https://github.com/GeoffH02/Twitter-Experience"><i
+                            class="fa-brands fa-github"></i> See on Github</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6 text-center p-3">
+            <div class="col-lg-12">
+                <span class="projectsCardsTitle">Portfolio</span>
+            </div>
+            <div class="projectsCards d-flex row align-items-center">
+                <div class="col-lg-6">
+                    <p>Handmade project.</p>
+                    <p>Done this project in 3 days.</p>
+                    <p>Made alone.</p>
+                    <p>Made with Bootstrap.</p>
+                    <p>Some CSS and JavaScript too.</p>
+                    <p>It was really fun to do.</p>
+                    <a class="btn btn-outline-light" href="https://github.com/GeoffH02/Twitter-Experience"><i
+                            class="fa-brands fa-github"></i> See on Github</a>
+                </div>
+                <div class="col-lg-6 rounded">
+                    <img src="./ext/img/projects/portoflio.gif" alt="portfolio" class="rounded img-fluid" width="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center p-3">
+            <div class="col-lg-12">
+                <span class="projectsCardsTitle">Virgo Wallet</span>
+            </div>
+            <div class="projectsCards d-flex row align-items-center">
+                <div class="col-lg-6">
+                    <img src="./ext/img/projects/virgo.gif" alt="twitter" class="rounded img-fluid" id="virgoImg">
+                </div>
+                <div class="col-lg-6">
+                    <p>In progress webextension project.</p>
+                    <p>Project started 1 years ago.</p>
+                    <p>Made with team of 3.</p>
+                    <p>I made the front with a collegue.</p>
+                    <p>Others members give us idea and do the communication.</p>
+                    <p>I do HTML,CSS,JS and using chartJS.</p>
+                    <a class="btn btn-outline-light" href="https://github.com/virgoproject/VirgoWallet/tree/main"><i
+                            class="fa-brands fa-github"></i> See on Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center p-3">
+            <div class="col-lg-12">
+                <span class="projectsCardsTitle">IRC chat</span>
+            </div>
+            <div class="projectsCards d-flex row align-items-center">
+                <div class="col-lg-6">
+                    <p>First IRC project.</p>
+                    <p>Done this project in fews days.</p>
+                    <p>Made alone.</p>
+                    <p>Made with NodeJS,Express,Sequelizer.</p>
+                    <p>Some CSS and JavaScript too.</p>
+                    <p>It was interesting.</p>
+                    <a class="btn btn-outline-light" href="https://github.com/GeoffH02/VgoChatOfficial"><i
+                            class="fa-brands fa-github"></i> See on Github</a>
+                </div>
+                <div class="col-lg-6 rounded">
+                    <img src="./ext/img/projects/irc.gif" alt="portfolio" class="rounded img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcomeText bg-dark text-light p-5" id="contacts">
+    <div class="row">
+        <div class="col-lg-12 mt-5">
+            <p class="m-0 p-0">How to contact me ?</p>
+        </div>
+    </div>
+    <div class="contact-form p-5 d-flex row">
+        <div class="col-lg-6 d-flex flex-column">
+            <p>You can contact me by mail here <i class="fa-solid fa-arrow-down"></i></p>
+            <p>Or you can contact me with your own email,in this case click here to copy my email : <i
+                    class="fa-solid fa-envelope" onclick="showAlert(this.id)" id="emailcontact"></i></p>
+            <form class=" d-flex flex-column inputEmail" action="https://formspree.io/f/meqnbvjw" method="post">
+                <input type="text" placeholder="Name" name="Nom" class="mt-2" id="nameForm">
+                <input type="text" placeholder="Email" name="Email" class="mt-2" id="emailForm">
+                <textarea placeholder="Object" class="mt-2" id="contentForm" name="Contenu"></textarea>
+                <button class="btn btn-outline-light mt-2 col-lg-4 text-center" id="btnSubmit" onclick="checkFromSubmit()">Send <i
+                        class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+            <div class="col-lg-12 d-flex align-items-center flex-column justify-content-center">
+                <div class="d-flex">
+                    <p>My socials network</p>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="https://www.linkedin.com/in/geoffrey-hallier-8ab971231/" style="font-size: 50px">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <span>Linkedin</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center me-3 ms-3">
+                        <a href="https://github.com/GeoffH02" style="font-size: 50px">
+                            <i class="fa-brands fa-github"></i></a>
+                        <span>Github</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center me-3 ms-3">
+                        <a  style="font-size: 50px" onclick="showAlert(this.id)" id="emailsocial">
+                            <i class="fa-solid fa-envelope" ></i>
+                        </a>
+                        <span>My mail</span>
+                    </div>
+                </div>
+                <span class="mt-4">Feel free to contact me on any of these network.</span>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<script src="./ext/js/scripts.js"></script>
