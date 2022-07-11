@@ -37,6 +37,7 @@ function showAlert(id) {
 
     let textNotif = ""
     let alertMail = "geoffrey02@orange.fr"
+    let linkToSite = "https://geoffh02.github.io/Portfolio/"
     switch (id) {
         case  'email':
             textNotif = "Email added to clipboard." + '\n' + alertMail
@@ -49,6 +50,10 @@ function showAlert(id) {
         case  'emailsocial':
             textNotif = "Email added to clipboard." + '\n' + alertMail
             navigator.clipboard.writeText(alertMail);
+            break;
+        case 'siteShare':
+            textNotif = "WebSite link added to clipboard" + '\n' + linkToSite
+            navigator.clipboard.writeText(linkToSite);
             break;
 
     }

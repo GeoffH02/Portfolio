@@ -40,6 +40,16 @@
     color: #9f9b9b;
 }
 
+.fa-share-from-square{
+    cursor: pointer;
+    transition: 250ms ease-in-out all;
+}
+
+.fa-share-from-square:hover{
+    cursor: pointer;
+    color: #9f9b9b;
+}
+
 .social-link{
     font-size: 16px;
 }
