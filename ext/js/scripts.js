@@ -24,12 +24,38 @@ window.onload = () => {
     setInterval(changeWelcome, 5000)
 }
 
+ let darkModeState = 1
+
 function burgerMenu() {
     let nav = document.querySelector("#myTopnav");
     if (nav.className === "nav") {
         nav.className += " responsive";
     } else {
         nav.className = "nav";
+    }
+}
+
+function darkMode(){
+    let all = document.querySelectorAll(".bg-dark")
+    console.log(darkModeState)
+
+    if (darkModeState === 0){
+        let all = document.querySelectorAll(".bg-light")
+        for (var j = 0; j < all.length; j++){
+            darkModeState = 1
+            all[j].classList.add('bg-dark');
+            all[j].classList.add('text-light');
+            all[j].classList.remove('bg-light');
+            all[j].classList.remove('text-dark');
+        }
+    } else {
+        for (var i = 0; i < all.length; i++) {
+            darkModeState = 0
+            all[i].classList.add('bg-light');
+            all[i].classList.add('text-dark');
+            all[i].classList.remove('bg-dark');
+            all[i].classList.remove('text-light');
+        }
     }
 }
 

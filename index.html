@@ -26,8 +26,8 @@
 </head>
 <body>
 <section id="nav">
-    <nav>
-        <div class="nav" id="myTopnav">
+    <nav class="">
+        <div class="nav bg-dark text-light" id="myTopnav">
             <a href="#resume">Summary</a>
             <a href="#grades">Grades</a>
             <a href="#experience">Experience</a>
@@ -51,8 +51,8 @@
             </div>
         </div>
         <div class="col-lg-6 d-flex justify-content-end optionsSite">
-            <i class="fa-solid fa-moon me-2"></i>
-            <i class="fa-solid fa-language"></i>
+            <a onclick="darkMode()"><i class="fa-solid fa-moon me-2"></i></a>
+           <a> <i class="fa-solid fa-language"></i></a>
         </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center">
@@ -559,7 +559,7 @@
             <form class=" d-flex flex-column inputEmail" action="https://formspree.io/f/meqnbvjw" method="post">
                 <input type="text" placeholder="Name" name="Nom" class="mt-2" id="nameForm">
                 <input type="text" placeholder="Email" name="Email" class="mt-2" id="emailForm">
-                <textarea placeholder="Object" class="mt-2" id="contentForm" name="Contenu"></textarea>
+                <textarea placeholder="Object" class="mt-2 bg-dark" id="contentForm" name="Contenu"></textarea>
                 <button class="btn btn-outline-light mt-2 col-lg-4 text-center" id="btnSubmit" onclick="checkFromSubmit()">Send <i
                         class="fa-solid fa-paper-plane"></i></button>
             </form>

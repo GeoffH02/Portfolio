@@ -20,6 +20,14 @@
 
 }
 
+.fa-moon{
+    cursor: pointer;
+}
+
+.fa-language{
+    cursor: pointer;
+}
+
 .fa-discord{
     color: #7289d9;
     transition: 250ms ease-in-out all;
